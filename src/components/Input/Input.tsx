@@ -1,5 +1,6 @@
 import React, { FC, ChangeEvent, ReactNode } from 'react';
 import Text from '../Text/Text'; // Import the Text component
+import * as FEAAS from '@sitecore-feaas/clientside/react'
 
 interface InputProps {
   type: 'text' | 'password' | 'number' | 'email';
@@ -31,5 +32,11 @@ const Input: FC<InputProps> = ({ type, placeholder, label, value, onChange }) =>
     </div>
   );
 };
+
+FEAAS.registerComponent(Input, {
+  name: 'My Input component',
+  description: 'Description of my Input component',
+  thumbnail: 'https://mss-p-006-delivery.stylelabs.cloud/api/public/content/3997aaa0d8be4eb789f3b1541bd95c58'
+})
 
 export default Input;

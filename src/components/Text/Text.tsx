@@ -1,4 +1,5 @@
 import React, { FC, ReactNode } from 'react';
+import * as FEAAS from '@sitecore-feaas/clientside/react'
 
 interface TextProps {
   size: 'xl' | '2xl' | '3xl';
@@ -57,5 +58,12 @@ const Text: FC<TextProps> = ({ size, weight, variant, children }) => {
     </span>
   );
 };
+
+FEAAS.registerComponent(Text, {
+  name: 'My Text component',
+  description: 'Description of my Text component',
+  thumbnail: 'https://mss-p-006-delivery.stylelabs.cloud/api/public/content/3997aaa0d8be4eb789f3b1541bd95c58'
+})
+
 
 export default Text;
