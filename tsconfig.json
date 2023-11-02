@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": ["DOM", "ES2015", "ES2016", "ES2017"],
+    "jsx": "react",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true
+  }
+}
