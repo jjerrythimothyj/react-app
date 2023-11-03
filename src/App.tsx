@@ -4,6 +4,7 @@ import Button from './components/Button/Button'; // Import the Button component
 import Text from './components/Text/Text'; // Import the Text component
 import Card from './components/Card/Card'; // Import the Card component
 import Carousel from './components/Carousel/Carousel' // Import the Carousel component
+import Mosaic from './components/Mosaic/Mosaic' // Import the Carousel component
 
 const App: React.FC = () => {
   const [inputValue, setInputValue] = useState('');
@@ -29,6 +30,101 @@ const App: React.FC = () => {
       },
     },
   ];
+
+  const mosaicData = [
+    {
+      poster: 'https://as2.ftcdn.net/v2/jpg/01/35/74/47/1000_F_135744710_kDH9h1lEFndThNT6bHOtshh9VQYeAtxk.jpg',
+      size: 4,
+      title: 'Movie 1',
+      rating: '4.5',
+      description: 'Description for Movie 1',
+      moreInfo: { label: 'More Info', linkTo: '/more-info1' },
+      book: { label: 'Book Now', linkTo: '/book-now1' },
+    },
+    {
+      poster: 'https://t4.ftcdn.net/jpg/02/16/46/81/240_F_216468131_xa78oKcQsamgGnuQxpYcMJjVxeB3UM1H.jpg',
+      size: 1,
+      title: 'Movie 2',
+      rating: '4.2',
+      description: 'Description for Movie 2',
+      moreInfo: { label: 'More Info', linkTo: '/more-info2' },
+      book: { label: 'Book Now', linkTo: '/book-now2' },
+    },
+    // Add more items as needed
+    {
+      poster: 'https://t4.ftcdn.net/jpg/03/39/20/63/240_F_339206331_6HRRc8XzyNLQURYwNoYrd3d0sFfUpXAl.jpg',
+      size: 1,
+      title: 'Movie 3',
+      rating: '4.8',
+      description: 'Description for Movie 3',
+      moreInfo: { label: 'More Info', linkTo: '/more-info3' },
+      book: { label: 'Book Now', linkTo: '/book-now3' },
+    },
+    {
+      poster: 'https://t4.ftcdn.net/jpg/04/06/35/19/240_F_406351930_oGq9NKLIuN9PrvM0vHNSu3nYtevbr7PW.jpg',
+      size: 1,
+      title: 'Movie 4',
+      rating: '4.0',
+      description: 'Description for Movie 4',
+      moreInfo: { label: 'More Info', linkTo: '/more-info4' },
+      book: { label: 'Book Now', linkTo: '/book-now4' },
+    },
+    {
+      poster: 'https://t3.ftcdn.net/jpg/01/53/00/44/240_F_153004498_ZUgetPp7jBussiv66WVPHhefKHdg0D0Q.jpg',
+      size: 1,
+      title: 'Movie 5',
+      rating: '3.9',
+      description: 'Description for Movie 5',
+      moreInfo: { label: 'More Info', linkTo: '/more-info5' },
+      book: { label: 'Book Now', linkTo: '/book-now5' },
+    },
+    {
+      poster: 'https://t3.ftcdn.net/jpg/02/58/74/90/240_F_258749064_9nWr9H9xg1uRqLrr58AOKHN9q1zJOX7O.jpg',
+      size: 1,
+      title: 'Movie 6',
+      rating: '4.7',
+      description: 'Description for Movie 6',
+      moreInfo: { label: 'More Info', linkTo: '/more-info6' },
+      book: { label: 'Book Now', linkTo: '/book-now6' },
+    },
+    {
+      poster: 'https://t4.ftcdn.net/jpg/01/67/25/93/240_F_167259317_D1JqH6mVDJVn42JN5AniGCJ1AmvVfZlj.jpg',
+      size: 1,
+      title: 'Movie 7',
+      rating: '4.6',
+      description: 'Description for Movie 7',
+      moreInfo: { label: 'More Info', linkTo: '/more-info7' },
+      book: { label: 'Book Now', linkTo: '/book-now7' },
+    },
+    {
+      poster: 'https://t3.ftcdn.net/jpg/01/89/13/42/240_F_189134251_3MANXRW6uWw4wg8QcA6fEltdFVNoPykI.jpg',
+      size: 4,
+      title: 'Movie 8',
+      rating: '4.9',
+      description: 'Description for Movie 8',
+      moreInfo: { label: 'More Info', linkTo: '/more-info8' },
+      book: { label: 'Book Now', linkTo: '/book-now8' },
+    },
+    {
+      poster: 'https://t4.ftcdn.net/jpg/01/59/77/71/240_F_159777150_ApcxDTfBqJyKNH6jQrDWdDt8vOj6rXgs.jpg',
+      size: 1,
+      title: 'Movie 9',
+      rating: '4.3',
+      description: 'Description for Movie 9',
+      moreInfo: { label: 'More Info', linkTo: '/more-info9' },
+      book: { label: 'Book Now', linkTo: '/book-now9' },
+    },
+    {
+      poster: 'https://t3.ftcdn.net/jpg/02/26/76/62/240_F_226766291_d0d258WCW1q7428KvjgcSh3YJoDmoGJI.jpg',
+      size: 1,
+      title: 'Movie 10',
+      rating: '3.8',
+      description: 'Description for Movie 10',
+      moreInfo: { label: 'More Info', linkTo: '/more-info10' },
+      book: { label: 'Book Now', linkTo: '/book-now10' },
+    },
+  ];
+  
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value);
@@ -60,6 +156,8 @@ const App: React.FC = () => {
       />
       <br />
       <Carousel slides={slides} />
+      <br />
+      <Mosaic items={mosaicData} />
   </>;
 };
 
