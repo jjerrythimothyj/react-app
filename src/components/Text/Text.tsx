@@ -2,9 +2,9 @@ import React, { FC, ReactNode } from 'react';
 import * as FEAAS from '@sitecore-feaas/clientside/react'
 
 interface TextProps {
-  size: 'xl' | '2xl' | '3xl';
-  weight: 'light' | 'bold';
-  variant: 'primary' | 'secondary';
+  size?: 'xs' | 's' | 'm' | 'l' | 'xl' | '2xl' | '3xl';
+  weight?: 'light' | 'bold';
+  variant?: 'primary' | 'secondary';
   children: ReactNode;
 }
 
