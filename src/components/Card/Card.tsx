@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import Text from '../Text/Text'; // Import the Text component from your design system
 import MoreVertIcon from '@mui/icons-material/MoreVert'; // Import MoreVertIcon from Material-UI
+import * as FEAAS from '@sitecore-feaas/clientside/react'
 
 interface CardProps {
   title: string;
@@ -63,5 +64,11 @@ const Card: FC<CardProps> = ({ title, date, time, coverPhoto, description }) => 
     </div>
   );
 };
+
+FEAAS.registerComponent(Card, {
+  name: 'My Card component',
+  description: 'Description of my Card component',
+  thumbnail: 'https://mss-p-006-delivery.stylelabs.cloud/api/public/content/3997aaa0d8be4eb789f3b1541bd95c58'
+})
 
 export default Card;
