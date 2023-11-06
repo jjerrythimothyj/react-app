@@ -68,7 +68,30 @@ const Card: FC<CardProps> = ({ title, date, time, coverPhoto, description }) => 
 FEAAS.registerComponent(Card, {
   name: 'My Card component',
   description: 'Description of my Card component',
-  thumbnail: 'https://mss-p-006-delivery.stylelabs.cloud/api/public/content/3997aaa0d8be4eb789f3b1541bd95c58'
+  thumbnail: 'https://mss-p-006-delivery.stylelabs.cloud/api/public/content/3997aaa0d8be4eb789f3b1541bd95c58',
+  group: 'Builder',
+  properties: {
+    title: {
+      type: 'string',
+      title: 'Title'
+    },
+    date: {
+      type: 'string',
+      title: 'Date'
+    },
+    time: {
+      type: 'string',
+      title: 'Time'
+    },
+    coverPhoto: {
+      type: 'string',
+      title: 'Cover Photo'
+    },
+    description: {
+      type: 'string',
+      title: 'Description'
+    }
+  }
 })
 
 export default Card;

@@ -36,7 +36,22 @@ const Input: FC<InputProps> = ({ type, placeholder, label, value, onChange }) =>
 FEAAS.registerComponent(Input, {
   name: 'My Input component',
   description: 'Description of my Input component',
-  thumbnail: 'https://mss-p-006-delivery.stylelabs.cloud/api/public/content/3997aaa0d8be4eb789f3b1541bd95c58'
+  thumbnail: 'https://mss-p-006-delivery.stylelabs.cloud/api/public/content/3997aaa0d8be4eb789f3b1541bd95c58',
+  group: 'Builder',
+  properties: {
+    type: {
+      type: 'string',
+      title: 'Type'
+    },
+    placeholder: {
+      type: 'string',
+      title: 'Placeholder'
+    },
+    label: {
+      type: 'string',
+      title: 'Label'
+    }
+  }
 })
 
 export default Input;
