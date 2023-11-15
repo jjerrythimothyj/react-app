@@ -48,7 +48,52 @@ const Carousel: FC<CarouselProps> = ({ slides }) => {
 FEAAS.registerComponent(Carousel, {
   name: 'My Carousel component',
   description: 'Description of my Carousel component',
-  thumbnail: 'https://mss-p-006-delivery.stylelabs.cloud/api/public/content/3997aaa0d8be4eb789f3b1541bd95c58'
+  thumbnail: 'https://mss-p-006-delivery.stylelabs.cloud/api/public/content/3997aaa0d8be4eb789f3b1541bd95c58',
+  group: 'Builder',
+  type: "object",
+  properties: {
+    slides: {
+      type: "array",
+      title: "Slides",
+      items: {
+        type: "object",
+        properties: {
+          slide: {
+            type: 'string',
+            title: 'Slide'
+          },
+          cta: {
+            type: "object",
+            title: 'CTA',
+            properties: {
+              style: {
+                type: 'object',
+                title: 'Style',
+                properties: {
+                  backgroundColor: {
+                    type: 'string',
+                    title: 'Background color'
+                  },
+                  color: {
+                    type: 'string',
+                    title: 'Color'
+                  }
+                }
+              },
+              label: {
+                type: 'string',
+                title: 'Label'
+              },
+              linkToDetailsPage: {
+                type: 'string',
+                title: 'Link to details page'
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 })
 
 export default Carousel;

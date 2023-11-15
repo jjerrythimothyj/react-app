@@ -70,6 +70,7 @@ FEAAS.registerComponent(Card, {
   description: 'Description of my Card component',
   thumbnail: 'https://mss-p-006-delivery.stylelabs.cloud/api/public/content/3997aaa0d8be4eb789f3b1541bd95c58',
   group: 'Builder',
+  type: "object",
   properties: {
     title: {
       type: 'string',
