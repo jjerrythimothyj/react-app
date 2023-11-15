@@ -54,7 +54,68 @@ const Mosaic: FC<MosaicProps> = ({ items }) => {
 FEAAS.registerComponent(Mosaic, {
   name: 'My Mosaic component',
   description: 'Description of my Mosaic component',
-  thumbnail: 'https://mss-p-006-delivery.stylelabs.cloud/api/public/content/3997aaa0d8be4eb789f3b1541bd95c58'
+  thumbnail: 'https://mss-p-006-delivery.stylelabs.cloud/api/public/content/3997aaa0d8be4eb789f3b1541bd95c58',
+  group: 'Builder',
+  type: "object",
+  properties: {
+    items: {
+      type: "array",
+      title: "Items",
+      items: {
+        type: "object",
+        properties: {
+          poster: {
+            type: 'string',
+            title: 'Poster'
+          },
+          size: {
+            type: 'number',
+            title: 'Size'
+          },
+          title: {
+            type: 'string',
+            title: 'Title'
+          },
+          rating: {
+            type: 'string',
+            title: 'Rating'
+          },
+          description: {
+            type: 'string',
+            title: 'Description'
+          },
+          moreInfo: {
+            type: "object",
+            title: 'More info',
+            properties: {
+              label: {
+                type: 'string',
+                title: 'Label'
+              },
+              linkTo: {
+                type: 'string',
+                title: 'Link to'
+              },
+            }
+          },
+          book: {
+            type: "object",
+            title: 'Book',
+            properties: {
+              label: {
+                type: 'string',
+                title: 'Label'
+              },
+              linkTo: {
+                type: 'string',
+                title: 'Link to'
+              },
+            }
+          }
+        }
+      }
+    },
+  }
 })
 
 export default Mosaic;
