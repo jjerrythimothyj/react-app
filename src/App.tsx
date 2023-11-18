@@ -135,6 +135,7 @@ const App: React.FC = () => {
   };
 
   return <>
+    <Text size="xl" weight="bold" variant="secondary"></Text>
     <Text size="xl" weight="bold" variant="secondary">
       Sample Text
     </Text>

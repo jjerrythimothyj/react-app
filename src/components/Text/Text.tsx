@@ -5,7 +5,7 @@ interface TextProps {
   size?: 'xs' | 's' | 'm' | 'l' | 'xl' | '2xl' | '3xl';
   weight?: 'light' | 'bold';
   variant?: 'primary' | 'secondary';
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 const Text: FC<TextProps> = ({ size, weight, variant, children }) => {
@@ -54,7 +54,7 @@ const Text: FC<TextProps> = ({ size, weight, variant, children }) => {
 
   return (
     <span style={{ fontSize, fontWeight, color }}>
-      {children}
+      {children ?? "Default Content"}
     </span>
   );
 };
