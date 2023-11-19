@@ -5,6 +5,7 @@ import Text from './components/Text/Text'; // Import the Text component
 import Card from './components/Card/Card'; // Import the Card component
 import Carousel from './components/Carousel/Carousel' // Import the Carousel component
 import Mosaic from './components/Mosaic/Mosaic' // Import the Carousel component
+import ExampleClientsideComponent from './components/ExampleClientsideComponent/ExampleClientsideComponent';
 
 const App: React.FC = () => {
   const [inputValue, setInputValue] = useState('');
@@ -159,6 +160,9 @@ const App: React.FC = () => {
       <Carousel slides={slides} />
       <br />
       <Mosaic items={mosaicData} />
+      <br />
+      <br />
+      <ExampleClientsideComponent firstName='Sample firstname' />
   </>;
 };
 
