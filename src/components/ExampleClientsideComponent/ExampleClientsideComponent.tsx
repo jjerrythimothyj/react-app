@@ -45,8 +45,8 @@ export default function ExampleClientsideComponent(props: {
 }
 
 FEAAS.registerComponent(ExampleClientsideComponent, {
-  name: "clientside-only",
-  title: "Clientside-only component",
+  name: "clientsidee-only",
+  title: "Clientsidee-only component",
   description: "Description of my example component",
   thumbnail:
     "https://feaasstatic.blob.core.windows.net/assets/thumbnails/byoc.svg",
