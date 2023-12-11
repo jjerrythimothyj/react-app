@@ -8,7 +8,7 @@ interface TextProps {
   children?: ReactNode;
 }
 
-const Text: FC<TextProps> = ({ size, weight, variant, children }) => {
+function Text({ size, weight, variant, children }: TextProps) {
   let fontSize: string;
   let fontWeight: string;
   let color: string;
@@ -60,8 +60,8 @@ const Text: FC<TextProps> = ({ size, weight, variant, children }) => {
 };
 
 FEAAS.registerComponent(Text, {
-  name: 'text-only',
-  title: 'Text-only component',
+  name: 'text1-only',
+  title: 'Text1-only component',
   description: 'Description of my Text component',
   thumbnail: 'https://mss-p-006-delivery.stylelabs.cloud/api/public/content/3997aaa0d8be4eb789f3b1541bd95c58',
   group: 'Builder',
