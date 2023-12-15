@@ -1,0 +1,21 @@
+{"slides": [
+  {
+    "slide": "https://as2.ftcdn.net/v2/jpg/03/24/27/77/1000_F_324277723_mXv92HVx29XZgPjGlGhgOlY9gWeQHjct.jpg",
+    "cta": {
+      "style": { "backgroundColor": "blue", "color": "white" },
+      "label": "Learn More",
+      "linkToDetailsPage": "/details"
+    }
+  },
+  {
+    "slide": "https://t4.ftcdn.net/jpg/03/48/33/01/240_F_348330128_gbGvQ1OtIlz6FW0NwJmn7QofDDxNG3lm.jpg"
+  },
+  {
+    "slide": "https://as1.ftcdn.net/v2/jpg/02/84/35/52/1000_F_284355244_IgKpFLvx3RdC9uQmiK5Tay5MJlu76nfF.jpg",
+    "cta": {
+      "style": { "backgroundColor": "orange", "color": "white" },
+      "label": "Get Started",
+      "linkToDetailsPage": "/start"
+    }
+  }
+]}
